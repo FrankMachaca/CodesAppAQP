@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "341439189846",
+    "firebase_url": "https://conocetudestino.firebaseio.com",
+    "project_id": "conocetudestino",
+    "storage_bucket": "conocetudestino.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341439189846:android:92c2c319dd3cca8a",
+        "android_client_info": {
+          "package_name": "com.example.fmach.codesappaqp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341439189846-b3uhlu0re3o9iiff1efs9hc64pmorm2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fmach.codesappaqp",
+            "certificate_hash": "3558662990a77047fa60b7b65df95f31d5ef62ad"
+          }
+        },
+        {
+          "client_id": "341439189846-uq6q975hhn7pn2ok085u2r1iqbce1tvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJLnLcpe5Y5-hVW4OLKTd-C8Fa81TrEzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341439189846-uq6q975hhn7pn2ok085u2r1iqbce1tvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

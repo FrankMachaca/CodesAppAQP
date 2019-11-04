@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetailsActivity">
+    <ImageView
+        android:id="@+id/place_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/place_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_image_details"
+        android:text="Place Name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/place_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name_details"
+        android:text="Place description"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/place_address_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_description_details"
+        android:text="Address"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>
