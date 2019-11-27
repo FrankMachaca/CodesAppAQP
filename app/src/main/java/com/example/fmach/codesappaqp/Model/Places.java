@@ -1,15 +1,15 @@
 package com.example.fmach.codesappaqp.Model;
 
-public class Products
+public class Places
 {
     private String pname, description, address, image, category, pid, date, time;
 
-    public Products()
+    public Places()
     {
 
     }
 
-    public Products(String pname, String description, String address, String image, String category, String pid, String date, String time) {
+    public Places(String pname, String description, String address, String image, String category, String pid, String date, String time) {
         this.pname = pname;
         this.description = description;
         this.address = address;

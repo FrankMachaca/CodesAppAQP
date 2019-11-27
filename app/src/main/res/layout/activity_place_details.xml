@@ -5,51 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PlaceDetailsActivity">
-    <ImageView
-        android:id="@+id/place_image_details"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:scaleType="centerCrop"
-        />
 
     <TextView
         android:id="@+id/place_name_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/place_image_details"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
         android:text="Place Name"
         android:textColor="@android:color/black"
-        android:textStyle="bold"
         android:textSize="30sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
 
-        />
     <TextView
         android:id="@+id/place_description_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/place_name_details"
-        android:text="Place description"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="17sp"
+        android:layout_below="@+id/place_image_details"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="26dp"
+        android:text="Place description"
+        android:textColor="@color/colorText"
+        android:textSize="17sp"
 
-        />
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/place_address_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/place_description_details"
-        android:text="Address"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
+        android:text="Address"
+        android:textColor="@color/colorText"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-        />
-
+    <ImageView
+        android:id="@+id/place_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/place_name_details"
+        android:background="@drawable/logo_design"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop" />
 </RelativeLayout>

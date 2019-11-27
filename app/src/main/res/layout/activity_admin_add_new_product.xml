@@ -39,7 +39,7 @@
         android:hint="Nombre"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:background="@drawable/input_design"
+        android:background="@drawable/input_design2"
         />
     <EditText
         android:id="@+id/place_description"
@@ -52,7 +52,7 @@
         android:hint="Descripcion lugar"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:background="@drawable/input_design"
+        android:background="@drawable/input_design2"
         />
     <EditText
         android:id="@+id/place_address"
@@ -65,7 +65,7 @@
         android:hint="Dirección"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:background="@drawable/input_design"
+        android:background="@drawable/input_design2"
         />
     <Button
         android:id="@+id/add_new_place"

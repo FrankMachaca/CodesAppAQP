@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.fmach.codesappaqp.Model.Products;
+import com.example.fmach.codesappaqp.Model.Places;
+import com.example.fmach.codesappaqp.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -16,8 +17,6 @@ import com.rey.material.widget.FloatingActionButton;
 
 
 import com.squareup.picasso.Picasso;
-
-import java.security.PrivateKey;
 
 public class PlaceDetailsActivity extends AppCompatActivity {
 
@@ -49,7 +48,7 @@ public class PlaceDetailsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()){
-                    Products places = dataSnapshot.getValue(Products.class);
+                    Places places = dataSnapshot.getValue(Places.class);
 
                     placeName.setText(places.getPname());
                     placeAddress.setText("Ubicanos en: " + places.getAddress());

@@ -4,8 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -20,7 +18,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.fmach.codesappaqp.Model.*;
 
@@ -102,22 +99,22 @@ public class HomeActivity extends AppCompatActivity
     protected void onStart()
     {
         super.onStart();
-        FirebaseRecyclerOptions<Products> options =
-                new FirebaseRecyclerOptions.Builder<Products>()
-                        .setQuery(PlaceRef.orderByChild("category").startAt(category).endAt(category), Products.class)
+        FirebaseRecyclerOptions<Places> options =
+                new FirebaseRecyclerOptions.Builder<Places>()
+                        .setQuery(PlaceRef.orderByChild("category").startAt(category).endAt(category), Places.class)
                         .build();
 
         if (category.equals("nulo")){
-            options = new FirebaseRecyclerOptions.Builder<Products>()
-                            .setQuery(PlaceRef, Products.class)
+            options = new FirebaseRecyclerOptions.Builder<Places>()
+                            .setQuery(PlaceRef, Places.class)
                             .build();
         }
 
 
-        FirebaseRecyclerAdapter<Products, ProductViewHolder> adapter =
-                new FirebaseRecyclerAdapter<Products, ProductViewHolder>(options) {
+        FirebaseRecyclerAdapter<Places, ProductViewHolder> adapter =
+                new FirebaseRecyclerAdapter<Places, ProductViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull final Products model) {
+                    protected void onBindViewHolder(@NonNull ProductViewHolder holder, int position, @NonNull final Places model) {
 
 
                         if (category.equals("nulo")) {
@@ -208,16 +205,16 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_cart)
+        if (id == R.id.nav_home)
         {
             Intent intent = new Intent(HomeActivity.this, HomeActivity.class);
             intent.putExtra("category", "nulo");
             startActivity(intent);
 
         }
-        else if (id == R.id.nav_search)
+        else if (id == R.id.nav_map)
         {
-            Intent intent = new Intent(HomeActivity.this, SearchPlacesActivity.class);
+            Intent intent = new Intent(HomeActivity.this, Mapa.class);
             startActivity(intent);
         }
         else if (id == R.id.nav_restaurant)
@@ -243,7 +240,7 @@ public class HomeActivity extends AppCompatActivity
         }
         else if (id == R.id.nav_settings)
         {
-            Intent intent = new Intent(HomeActivity.this, SettinsActivity.class);
+            Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
             startActivity(intent);
         }
         else if (id == R.id.nav_logout)
@@ -255,9 +252,17 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             finish();
         }
+        else if (id == R.id.nav_store)
+        {
+
+            Intent intent = new Intent(HomeActivity.this,AdminAddNewProductActivity.class);
+            startActivity(intent);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

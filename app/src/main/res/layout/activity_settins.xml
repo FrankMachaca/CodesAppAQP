@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettinsActivity">
+    tools:context=".SettingsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_settings"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPanel">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_settings"
@@ -27,7 +27,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cancelar"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorText"
                     android:textSize="17sp"
                     android:textStyle="bold"
                     android:layout_alignParentStart="true"
@@ -38,7 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Actualizar"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorText"
                     android:textSize="17sp"
                     android:textStyle="bold"
                     android:layout_marginRight="10dp"
@@ -72,7 +72,7 @@
         android:textStyle="bold"
         android:layout_marginRight="10dp"
         android:layout_marginTop="4dp"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorText"
         android:layout_below="@+id/settings_profile_image"
         android:layout_centerHorizontal="true"
         />
@@ -82,6 +82,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_image_change_btn"
+        android:textColor="@color/colorText"
+        android:background="@color/colorText2"
         android:hint="Numero telefono..."
         android:layout_margin="15dp"
         android:padding="10dp"
@@ -93,6 +95,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/settings_phone_number"
         android:hint="Nombre completo..."
+        android:textColor="@color/colorText"
+        android:background="@color/colorText2"
         android:layout_margin="15dp"
         android:padding="10dp"
         />
@@ -103,6 +107,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/settings_full_name"
         android:hint="Direccion..."
+        android:textColor="@color/colorText"
+        android:background="@color/colorText2"
         android:layout_margin="15dp"
         android:padding="10dp"
         />

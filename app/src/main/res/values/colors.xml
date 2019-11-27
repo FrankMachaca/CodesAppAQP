@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2f681c</color>
-    <color name="colorPrimaryDark">#447d35</color>
-    <color name="colorAccent">#447d35</color>
-    <color name="colorTrans">#99ffffff</color>
+    <color name="colorPrimary">#ff6363</color>
+    <color name="colorPrimaryDark">#FF6363</color>
+    <color name="colorAccent">#333d47</color>
+    <color name="colorTrans">#99000000</color>
+    <color name="colorDesign">#5B000000</color>
+    <color name="colorTrans2">#70ffffff</color>
+    <color name="colorTran">#f1f8f9</color>
+    <color name="colorTran2">#dcedc8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPri">#558b2f</color>
+    <color name="colorPri2">#8bc34a</color>
+
+    <color name="colorPanel">#ff6363</color>
+    <color name="colorCasual">#1fc8c0</color>
+    <color name="colorText">#333d47</color>
+    <color name="colorText2">#a2a7aa</color>
+    <color name="colorInputTrans">#ABA2A7AA</color>
+    <color name="colorPanelTrans">#B9FF6363</color>
+    <color name="colorButton">#dcedc8</color>
+
+
+
 </resources>
