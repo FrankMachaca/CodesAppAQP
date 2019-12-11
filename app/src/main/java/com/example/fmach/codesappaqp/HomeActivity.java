@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -17,11 +18,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.fmach.codesappaqp.Model.*;
 
-import com.example.fmach.codesappaqp.Prevalent.Prevalent;
+import com.example.fmach.codesappaqp.Model.Prevalent;
 import com.example.fmach.codesappaqp.ViewHolder.ProductViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -183,7 +186,7 @@ public class HomeActivity extends AppCompatActivity
 
 
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
         int id = item.getItemId();
@@ -195,7 +198,7 @@ public class HomeActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-
+*/
 
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -255,14 +258,44 @@ public class HomeActivity extends AppCompatActivity
         else if (id == R.id.nav_store)
         {
 
-            Intent intent = new Intent(HomeActivity.this,AdminAddNewProductActivity.class);
-            startActivity(intent);
+            Toast.makeText(HomeActivity.this, "Aún en desarrollo", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) { switch(item.getItemId()) {
+        case R.id.action_search:
+
+            SearchView searchView = (SearchView) item.getActionView();
+            searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return true;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+
+                    return false;
+                }
+            });
+        case R.id.share:
+            Toast.makeText(getBaseContext(), "En desarrollo", Toast.LENGTH_SHORT).show();
+            return(true);
+        case R.id.about:
+            Toast.makeText(this, R.string.about_toast, Toast.LENGTH_LONG).show();
+            return(true);
+        case R.id.exit:
+            finish();
+            return(true);
+
+    }
+        return(super.onOptionsItemSelected(item));
+    }
 
 }

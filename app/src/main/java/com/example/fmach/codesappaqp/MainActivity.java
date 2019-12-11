@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.fmach.codesappaqp.Model.Users;
-import com.example.fmach.codesappaqp.Prevalent.Prevalent;
+import com.example.fmach.codesappaqp.Model.Prevalent;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

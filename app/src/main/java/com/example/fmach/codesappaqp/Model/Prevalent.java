@@ -1,4 +1,4 @@
-package com.example.fmach.codesappaqp.Prevalent;
+package com.example.fmach.codesappaqp.Model;
 
 import com.example.fmach.codesappaqp.Model.Users;
 

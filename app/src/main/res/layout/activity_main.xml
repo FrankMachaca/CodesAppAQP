@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_aqp"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/app_logo"
-        android:layout_width="350dp"
-        android:layout_height="130dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/logo_design"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/logo_background"
         android:src="@drawable/applogo" />
 
     <TextView
@@ -24,14 +25,13 @@
         android:layout_below="@+id/app_logo"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="97dp"
-        android:background="@drawable/logo_design"
-        android:text="Busca, Descubre, Elige donde ir"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Busca, Descubre y Elige donde ir"
         android:textAlignment="center"
-        android:textColor="@color/colorText2"
+        android:textColor="@color/colorTexts2"
         android:textSize="17sp"
-        android:textStyle="bold|italic" />
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/main_login_btn"
@@ -39,32 +39,32 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/buttons"
-        android:padding="20dp"
-        android:text="¿Ya tienes una cuenta? Ingresa"
+        android:layout_marginBottom="110dp"
+        android:padding="17dp"
+        android:text="TENGO UNA CUENTA"
         android:textAllCaps="false"
-        android:textColor="@color/colorTran"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@color/colorLila"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/main_join_now_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/main_login_btn"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/buttons"
-        android:padding="20dp"
-        android:text="Registrarme"
+        android:layout_marginBottom="20dp"
+        android:padding="17dp"
+        android:text="REGISTRARME"
         android:textAllCaps="false"
-        android:textColor="@color/colorTran"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@color/colorLila"
+        android:textSize="18sp"/>
 
 
 </RelativeLayout>

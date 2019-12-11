@@ -2,14 +2,14 @@ package com.example.fmach.codesappaqp.Model;
 
 public class Places
 {
-    private String pname, description, address, image, category, pid, date, time;
+    private String pname, description, address, image, category, pid, date, time, lat, lon;
 
     public Places()
     {
 
     }
 
-    public Places(String pname, String description, String address, String image, String category, String pid, String date, String time) {
+    public Places(String pname, String description, String address, String image, String category, String pid, String date, String time, String lat, String lon) {
         this.pname = pname;
         this.description = description;
         this.address = address;
@@ -18,8 +18,9 @@ public class Places
         this.pid = pid;
         this.date = date;
         this.time = time;
+        this.lat = lat;
+        this.lon = lon;
     }
-
 
     public String getPname() {
         return pname;
@@ -83,5 +84,21 @@ public class Places
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String getLon() {
+        return lon;
+    }
+
+    public void setLon(String lon) {
+        this.lon = lon;
     }
 }

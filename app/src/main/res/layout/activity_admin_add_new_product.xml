@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/select_place_image"
-        android:layout_width="322dp"
-        android:layout_height="179dp"
+        android:layout_width="220dp"
+        android:layout_height="140dp"
         android:layout_below="@+id/category_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp"
@@ -39,12 +39,12 @@
         android:hint="Nombre"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:background="@drawable/input_design2"
+        android:background="@drawable/input_design"
         />
     <EditText
         android:id="@+id/place_description"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/place_name"
         android:inputType="textMultiLine"
         android:layout_marginTop="6dp"
@@ -52,7 +52,7 @@
         android:hint="Descripcion lugar"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:background="@drawable/input_design2"
+        android:background="@drawable/input_design"
         />
     <EditText
         android:id="@+id/place_address"
@@ -65,22 +65,43 @@
         android:hint="Dirección"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
-        android:background="@drawable/input_design2"
+        android:background="@drawable/input_design"
         />
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.fmach.codesappaqp.Position"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/place_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp" />
     <Button
         android:id="@+id/add_new_place"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/place_address"
+        android:layout_below="@+id/fragment2"
         android:text="Agregar Lugar"
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
         android:padding="17dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:textSize="18sp"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:background="@drawable/buttons"
         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment2"
+        android:layout_alignStart="@+id/place_name"
+        android:layout_marginBottom="-30dp"
+        android:text="TextView" />
+
 
 </RelativeLayout>

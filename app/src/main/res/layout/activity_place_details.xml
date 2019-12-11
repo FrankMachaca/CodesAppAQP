@@ -19,6 +19,18 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/place_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/place_name_details"
+        android:background="@drawable/logo_design"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop" />
+
     <TextView
         android:id="@+id/place_description_details"
         android:layout_width="match_parent"
@@ -46,15 +58,18 @@
         android:textSize="15sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/place_image_details"
+
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.fmach.codesappaqp.BlankFragment"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_below="@+id/place_name_details"
-        android:background="@drawable/logo_design"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:scaleType="centerCrop" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/place_address_details"/>
 </RelativeLayout>

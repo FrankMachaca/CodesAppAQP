@@ -27,9 +27,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cancelar"
-                    android:textColor="@color/colorText"
+                    android:textColor="@color/colorTexts2"
                     android:textSize="17sp"
-                    android:textStyle="bold"
+
                     android:layout_alignParentStart="true"
                     />
 
@@ -38,9 +38,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Actualizar"
-                    android:textColor="@color/colorText"
+                    android:textColor="@color/colorTexts2"
                     android:textSize="17sp"
-                    android:textStyle="bold"
+
                     android:layout_marginRight="10dp"
                     android:layout_alignParentEnd="true"
                     />
